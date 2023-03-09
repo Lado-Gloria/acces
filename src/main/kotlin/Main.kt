@@ -3,9 +3,11 @@ fun main() {
     println(result.length)
     number(10, 4,6)
     name("akirachix")
-    var unity = start("glo","peter","hellen","unice"))
+    var unity = start("glo","peter","hellen","unice")
     println(unity)
     var cal =  Calculator(2,3,5)
+    cal.add(3,6)
+    cal.substra(4,2)
 
 
 
@@ -29,7 +31,15 @@ fun start(nam1:String,nam2:String,nam3:String,nam4:String):String{
     var started= arrayOf(nam1,nam2,nam3,nam4)
     return started.contentToString()}
 class Calculator(var num1:Int, var num2:Int,var num3:Int){
-    fun add(){
+    fun add(num1:Int,num2:Int){
+        var adds = (num1 + num2)
+        println(adds)
 
     }
+    fun substra(num1:Int,num2:Int){
+        var subs = (num1 - num2)
+        println(subs)
+
+    }
+
 }
